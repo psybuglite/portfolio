@@ -1,0 +1,545 @@
+// This is the single file output by sass. It is intended to ONLY @import other files and serve as the main sass file.
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300")
+
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaina")
+
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css")
+
+@import spinner
+@import style
+
+$mycolor: rgb(67, 83, 101)
+
+*
+  margin: 0
+
+header
+  background: url(../img/bg.png) center center
+  background-size: cover
+  background-repeat: no-repeat
+  padding-bottom: 50px
+
+  .icon
+    height: 50px
+    width: 50px
+    background: url(../img/logo.png) center center
+    float: left
+    margin-left: 20px
+    margin-top: 20px
+
+  nav
+    float: right
+    padding: 30px 60px 0px 0px
+
+    a
+      display: inline-block
+      margin-left: 40px
+      color: #fff
+      text-transform: uppercase
+      font-size: 20px
+      font-weight: 700
+      text-decoration: none
+
+      &:hover
+        color: rgba(0, 0, 0, 0.8)
+
+  h1
+    font-size: 60px
+    font-weight: 400
+    color: white
+    text-transform: uppercase
+    font-family: "Baloo Bhaina", cursive
+    letter-spacing: 0.1em
+    text-align: center
+    clear: both
+    margin-bottom: 50px
+    padding-top: 40px
+
+
+    span
+      display: inline-block
+      padding-right: 0.4em
+      padding-left: 0.5em
+      border: white solid 7px
+      margin-top: 140px
+
+  p
+    color: white
+    text-align: center
+    font-size: 20px
+
+@media screen and (max-width: 600px)
+    header
+      .icon
+        background-position: center top
+
+      nav
+        float: none
+        text-align: center
+
+        a
+          display: inline
+          font-size: 14px
+          margin-left: 20px
+
+      h1
+        span
+          display: inline
+
+
+@media screen and (max-width: 400px)
+      nav
+        a
+          display: inline
+          font-size: 14px
+          margin-left: 10px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#about
+  .abt
+    h3
+      padding: 40px 0px 0px 0px
+      font-size: 20px
+      text-align: center
+      color: rgb(67, 83, 101)
+      font-family: cursive
+      text-transform: uppercase
+
+  .stuff
+    max-width: 600px
+    text-align: center
+    margin: 30px auto
+
+    p
+      padding: 0 15px
+      font-size: 20px
+      font-weight: lighter
+
+  .bubbles
+    display: flex
+    max-width: 780px
+    margin: 0 auto
+    align-items: center
+
+    img
+      border-radius: 50%
+      width: 200px
+      height: 200px
+      padding-left: 50px
+      padding-right: 50px
+
+    .lnr
+      font-size: 40px
+      color: rgb(67, 83, 101)
+
+    .pencil
+      padding-top: 80px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0px
+
+    .code
+      padding-top: 80px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0px
+
+    .screen
+      padding-top: 80px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0px
+
+    .music
+      padding-top: 80px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0px
+
+@media screen and (max-width: 800px)
+  .bubbles
+    display: block
+    text-align: center
+
+    .lnr
+      display: none
+
+    img
+      margin: 0 auto
+
+#skill
+  background: rgba(#7cabcd, 0.84)
+  overflow: auto
+  padding-bottom: 50px
+
+  h3
+    text-transform: uppercase
+    color: white
+    text-align: center
+    padding-top: 20px
+
+  .skill-wrap
+    max-width: 800px
+    margin: 50px auto
+    color: white
+    justify-content: space-around
+
+    .skill-unit
+      width: 300px
+      float: left
+
+    .skill-icons
+      margin-bottom: 30px
+
+      span
+        display: inline-block
+        width: 15px
+        height: 15px
+        background-color: white
+        border-radius: 50%
+        margin-right: 10px
+
+        &:after
+          content: ""
+          display: block
+          width: 11px
+          height: 11px
+          border-radius: 50%
+          margin: 2px
+          background-color: $mycolor
+
+
+
+@media screen and (max-width: 900px)
+  .skill-unit
+    padding-left: 50px
+    width: 200px
+
+@media screen and (max-width: 600px)
+  .skill-unit
+    padding-left: 10px
+
+
+
+
+
+
+
+
+
+.alt-section
+  text-align: center
+
+  h3
+    margin: 30px
+
+.work-section
+  overflow-x: hidden
+
+  .thumb-wrap, .work-wrap
+    width: 50%
+    float: left
+
+  .work-belt
+    width: 200%
+    position: relative
+    left: 0%
+    transition: 1s
+
+    .thumb-container
+      padding-top: 20px
+      overflow: auto
+      max-width: 900px
+      margin: 0 auto
+      padding-bottom: 100px
+
+      .thumb-1
+        background:
+          image: url(../img/white-card.jpg)
+          position: center center
+          repeat: no-repeat
+          size: cover
+
+      .thumb-2
+        background:
+          image: url(../img/white-card-2.jpg)
+          position: center center
+          repeat: no-repeat
+          size: cover
+
+      .thumb-3
+        background:
+          image: url(../img/dark-card.jpg)
+          position: center center
+          repeat: no-repeat
+          size: cover
+
+      .thumb-4
+        background:
+          image: url(../img/work-1.png)
+          position: center center
+          repeat: no-repeat
+          size: cover
+
+      .thumb-5
+        background:
+          image: url(../img/audio1.png)
+          position: center center
+          repeat: no-repeat
+          size: cover
+
+      .thumb-6
+        background:
+          image: url(../img/work-3.png)
+          position: center center
+          repeat: no-repeat
+          size: cover
+
+      .thumb-unit
+        display: block
+        width: 33%
+        float: left
+        position: relative
+        padding-top: 20%
+        overflow: hidden
+        cursor: pointer
+
+        @media screen and (max-width: 500px)
+          width: 50%
+          padding-top: 26%
+
+        .thumb-overlay
+          position: absolute
+          top: 100%
+          right: 0px
+          left: 0px
+          bottom: null
+          height: 100%
+          background: fade-out(gray, 0.1)
+          transition: 0.2s
+          justify-content: space-around
+          align-items: center
+
+          p
+            display: block
+            line-height: 1.2
+            text-transform: uppercase
+            padding: 0px 20px
+            color: white
+            font:
+              size: 1.2em
+              weight: 200
+
+        &:hover .thumb-overlay
+          position: absolute
+          top: 0%
+          right: 0px
+          left: 0px
+          bottom: null
+
+.work-container
+  width: 80%
+  margin:  auto
+  display: none
+
+  .lnr-chevron-left-circle
+    font-size: 60px
+    margin: 20px
+    opacity: 0.5
+
+    &:hover
+      opacity: 1
+      cursor: pointer
+
+
+
+  img
+    max-width: 100%
+    margin-bottom: 20px
+
+
+
+
+
+
+
+#contacts
+  text-align: center
+  padding-bottom: 50px
+  background: rgba(#7cabcd, 0.84)
+
+
+  .social
+    text-transform: uppercase
+    color: white
+    padding: 20px
+
+
+
+  .icons-wrap
+    max-width: 700px
+    margin: 40px auto
+    display: flex
+    justify-content: space-around
+
+    .icon-github
+      background: #000
+
+    .icon-twitter
+      background: #0084b4
+
+    .icon-free-code-camp
+      background: green
+
+    .icon-medium
+      background: #808080
+
+    a
+      display: block
+      text-decoration: none
+      height: 50px
+      width: 50px
+      line-height: 50px
+      color: white
+      border-radius: 50%
+      font-size: 30px
+      transition: 0.3s
+
+      &:hover
+        transform: scale(1.2)
+
+  .bar
+    width: 250px
+    height: 0px
+    border: solid 2px white
+    margin: 20px auto
+
+  .email
+    font-size: 35px
+    color: white
+    text-decoration: none
+
+
+.form
+  padding: 10px
+  h3
+    text-transform: uppercase
+    color: $mycolor
+    text-align: center
+    margin: 5px
+
+  form
+    max-width: 600px
+    margin: 0 auto 20px
+
+    textarea
+      height: 10em
+
+    input, textarea
+      border: 2px solid $mycolor
+      border-radius: 5px
+      width: 100%
+      box-sizing: border-box
+      padding: 10px
+
+      &:focus
+        outline: none
+        border-color: white
+        box-shadow: 1px 1px 1px 1px $mycolor
+
+    .send-wrap
+      text-align: right
+
+    [type="submit"]
+      background: $mycolor
+      color: white
+      text-transform: uppercase
+      width: 33%
+      font-size: 15px
+
+      &:hover
+        background: $mycolor/2
+
+
+
+    .contact-info-group
+      label
+        width: 50%
+        float: left
+        box-sizing: border-box
+
+        &:nth-child(1)
+          padding-right: 5px
+        &:nth-child(2)
+          padding-left: 5px
+
+
+    label
+      display: block
+      margin-bottom: 20px
+
+      span
+        display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+  height: 140px
+  background: url(../img/bg.png) center center
+  background-size: cover
+  background-repeat: no-repeat
+
+  .wrap
+    display: block
+    text-align: center
+    padding-top: 10px
+
+    .icon
+      height: 50px
+      width: 50px
+      margin: 0 auto
+      z-index: 1
+
+    .copyright
+      margin-top: 5px
+      text-transform: uppercase
+      color: white
+      font-size: 10px
+
+    nav
+      margin: 10px 60px 0px 0px
+
+      a
+        display: inline
+        margin-left: 40px
+        color: #fff
+        text-transform: uppercase
+        font-size: 15px
+        font-weight: 700
+        text-decoration: none
+
+        &:hover
+          color: rgba(0, 0, 0, 0.8)
